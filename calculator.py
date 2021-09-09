@@ -1,7 +1,12 @@
 import argparse
 
+
+def sub_func(a,b):
+	return a - b
+
 def add_func(a,b):
 	return a + b
+
 
 def div_func(a, b):
 	if b == 0:
@@ -23,6 +28,14 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 
 	#add arguments here
+
+	parser.add_argument('--sub',mnargs=2, type=int, help='subtracts two numbers')
+	args = parser.parse_args()
+
+	if args.sub:
+		print( add_func(args.sub[0], args.sub[1]))
+	print(args)
+
 	parser.add_argument('--add', nargs=2, type=int, help='adds two numbers')
 	parser.add_argument('--divide', nargs=2, type=int, help='divides two numbers')
 	parser.add_argument('--add',nargs=2, type=int, help='adds two numbers')
@@ -48,5 +61,6 @@ if __name__ == '__main__':
 
 	if args.multiply:
     		print(multiply_func(args.add[0],args[1]))
+
 
 
