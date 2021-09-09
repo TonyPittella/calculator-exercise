@@ -1,9 +1,7 @@
 import argparse
 
-
 def add_func(a,b):
 	return a + b
-
 
 def div_func(a, b):
 	if b == 0:
@@ -15,16 +13,11 @@ def remainder_func(a,b):
 		return a % b
 	return "The second number cant't be 0"
 
-
 def sqrt(n):
     return n**2
 
-
-
 def multiply_func(a,b):
     return a * b
-
-
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -41,8 +34,6 @@ if __name__ == '__main__':
 	if args.add:
 		print( add_func(args.add[0], args.add[1]))
 
-
-
 	if args.divide:
 		print( div_func(args.divide[0], args.divide[1]))
 
@@ -52,14 +43,10 @@ if __name__ == '__main__':
 	if args.multiply:
     		print(multiply_func(args.add[0],args[1]))		
 	
-
 	if args.sqrt:
 		print( sqrt(args.sqrt[0]))
 
-
 	if args.multiply:
     		print(multiply_func(args.add[0],args[1]))
-	print(args)			
-
 
 
