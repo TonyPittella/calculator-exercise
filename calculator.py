@@ -47,9 +47,6 @@ if __name__ == '__main__':
 		print( sqrt(args.sqrt[0]))
 
 	if args.multiply:
-    	print(multiply_func(args.add[0],args[1]))
-
-    if args.not:
-    	print("not")
+    		print(multiply_func(args.add[0],args[1]))
 
 
