@@ -7,9 +7,9 @@
 5. when ready, open a PR (Pull Request) to master (don't merge yet!)
   
  assigned parts:
-  subtraction : shaq; 6 - 4
-  remainder (using modulus): Trey;  6 mod 5 remainder = 1
-  division : phillip; 5/6 = 0.83 
-  multiplication : tony;  4 * 5 = 20
-  square root : james; sqrt(4) = 2
+ - subtraction : shaq; 6 - 4
+ - remainder (using modulus): Trey;  6 mod 5 remainder = 1
+ - division : phillip; 5/6 = 0.83 
+ - multiplication : tony;  4 * 5 = 20
+ - square root : james; sqrt(4) = 2
   
