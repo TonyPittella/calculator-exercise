@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 	#add arguments here
 	parser.add_argument('--add',nargs=2, type=int, help='adds two numbers')
-	parser.add_argument('--multiply', nargs=2, type=int, help='multiply two numbers')
+	parser.add_argument('--multiply', nargs='+', type=int, help='multiply more then one numbers')
 	args = parser.parse_args()
 
 	if args.add:
