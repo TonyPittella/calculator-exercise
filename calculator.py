@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 	#add arguments here
 	parser.add_argument('--add', nargs=2, type=int, help='adds two numbers')
-	parser.add_argument('--divide', nargs=2, type=int, help='adds two numbers')
+	parser.add_argument('--divide', nargs=2, type=int, help='divides two numbers')
 	args = parser.parse_args()
 
 	if args.add:
