@@ -5,7 +5,9 @@ def add_func(a,b):
 	return a + b
 
 def remainder_func(a,b):
-	return a % b
+	if b != 0:
+		return a % b
+	return "The second number cant't be 0"
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -17,7 +19,7 @@ if __name__ == '__main__':
 
 	if args.add:
 		print( add_func(args.add[0], args.add[1]))
-	print(args)
+
 
 	if args.remainder:
 		print(remainder_func(args.remainder[0], args.remainder[1]))
