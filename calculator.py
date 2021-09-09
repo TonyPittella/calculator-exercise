@@ -5,6 +5,8 @@ def add_func(a,b):
 	return a + b
 
 def div_func(a, b):
+	if b == 0:
+		return f"ERROR: second number entered can not be 0"	
 	return a / b
 
 if __name__ == '__main__':
@@ -17,7 +19,7 @@ if __name__ == '__main__':
 
 	if args.add:
 		print( add_func(args.add[0], args.add[1]))
-	print(args)
+
 
 	if args.divide:
 		print( div_func(args.divide[0], args.divide[1]))
